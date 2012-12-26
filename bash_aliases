@@ -1,6 +1,7 @@
 alias p='pwd && pwd -LP'
 alias c='clear'
 alias q='quota -v -s'
+alias qq='ssh cspro quota -v -s'
 alias reload='. ~/.bashrc'
 alias real='cd "`pwd -LP`"'
 alias tempty='trash-empty'
@@ -9,6 +10,10 @@ alias tsave='restore-trash'
 alias rrm='/bin/rm'
 alias g='pwd > ~/.go_last && echo "RECORDED GO LOCATION!"'
 alias go='cd `cat ~/.go_last` && echo "GOTO GO LOCATION!"'
+
+killbitch() {
+	awk '{print $2}' | xargs kill
+}
 
 mm() {
 	for x in "$@"; do

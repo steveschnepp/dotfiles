@@ -45,6 +45,7 @@ Bundle 'vim-scripts/AutoComplPop'
 Bundle 'benmills/vimux'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'brantb/vim-colors-solarized'
+Bundle 'bogado/file-line'
 if iCanHazVundle == 0
 	echo "Installing Bundles, please ignore key map error messages"
     echo ""
@@ -108,6 +109,8 @@ set tags=./tags,/sogang/under/cs20091631/Projects/minho-pintos/pintos/src/tags,/
 nnoremap <silent> <F7> :TlistUpdate<CR> 
 nnoremap <silent> <F8> :Tlist<CR> 
 nnoremap <silent> <F9> :TlistSync<CR> 
+nnoremap <silent> <F10> zf<CR>
+nnoremap <silent> <F11> za<CR>
 set csprg=/sogang/under/cs20091631/private/.local/bin_32/cscope
 set csto=0
 set cst
